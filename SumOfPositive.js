@@ -1,3 +1,5 @@
+// 1
+
 function SumOfPositive(arr) {
 
     let sum = 0;
@@ -10,3 +12,13 @@ return sum;
 }
 
 console.log(SumOfPositive([1, 2, -3]));
+
+
+
+// 2
+function SumOfPositives(arr) {
+
+   return  arr.filter((x) => x > 0).reduce((prev,current) => prev + current, 0 );
+
+}
+console.log(SumOfPositives([3, 4, -3]));
